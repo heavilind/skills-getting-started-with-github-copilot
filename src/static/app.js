@@ -1,3 +1,8 @@
+/*
+ * GitHub Copilot Skills Course
+ * Author: GitHub Student
+ */
+
 document.addEventListener("DOMContentLoaded", () => {
   const activitiesList = document.getElementById("activities-list");
   const activitySelect = document.getElementById("activity");
