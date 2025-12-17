@@ -89,33 +89,47 @@ section h3 {
   letter-spacing: 0.5px;
 }
 
-.activity-card .participants ul {
+.participants-list {
   list-style: none;
   padding-left: 0;
 }
 
-.activity-card .participants li {
-  padding: 5px 0 5px 20px;
-  position: relative;
+.participants-list li {
+  padding: 8px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   color: #666;
 }
 
-.activity-card .participants li:before {
-  content: "•";
-  position: absolute;
-  left: 5px;
-  color: #1a237e;
-  font-weight: bold;
+.participants-list li span {
+  flex: 1;
 }
 
-.activity-card .participants li:hover {
+.delete-participant {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 4px 10px;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.2s;
+  line-height: 1;
+}
+
+.delete-participant:hover {
+  background-color: #c82333;
+}
+
+.participants-list li:hover {
   color: #1a237e;
 }
 
-.activity-card .participants .no-participants {
+.no-participants {
   color: #999;
   font-style: italic;
-  padding-left: 5px;
 }
 
 .form-group {
